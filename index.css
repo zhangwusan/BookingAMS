@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bg-header : #4554C3;
+    --ft-roboto : "Roboto", sans-serif;
+    --clr-white : #fff;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--ft-roboto);
+}
+
+header {
+    background-color: var(--bg-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.itc-logo, 
+.ams-logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.ams-logo::before {
+    content: "hello world";
+    width: 20px;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.container-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.itc-title {
+    color: var(--clr-white);
+    font-size: 42px;
+    font-weight: 700;
+}
